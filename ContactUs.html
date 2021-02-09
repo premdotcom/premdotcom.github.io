@@ -78,6 +78,7 @@
 
        <!-- SEO TAGS START HERE --><!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118957392-3"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -253,7 +254,7 @@
                         <h2 class="language" lang="en">Send Message</h2>
                         <h2 class="language" lang="ar"> ارسل رسالة</h2>
                         <!--COntact Form-->
-                        <form id="" action="" >
+                        <form id="submit-form" action="" >
 
 
                             <div id="DivErrorMsg" class="Form_ErrorMessge" style="display: none"></div>
@@ -296,6 +297,27 @@
                                         </div>
                                     </div>
                             </div>
+
+
+                            <script>
+                                $("#submit-form").submit((e)=>{
+                                e.preventDefault()
+                                $.ajax({
+                                url:"https://script.google.com/macros/s/AKfycbwE41D00_MQX0bpcvPTy2WLeMWz32asEfM7vLzuDZpMcEDqRkBVT8Mtow/exec",
+                                data:$("#submit-form").serialize(),
+                                method:"post",
+                                success:function (response){
+                                alert("Form submitted successfully")
+                                window.location.reload()
+                                //window.location.href="https://google.com"
+                                },
+                                error:function (err){
+                                alert("Something Error")
+                                
+                                }
+                                })
+                                })
+                                </script>
                             <!--COntact Form-->
                         
 
