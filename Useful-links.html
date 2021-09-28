@@ -155,15 +155,62 @@
         </header>
         <!--End Main Header -->
 
-    <br><br>
+    <br><br>UAE
   <div class="">
-      <a class="theme-btn btn-style-two" href="https://premuae.com/"> HOME PAGE </a>
+      <a class="theme-btn btn-style-two" href="https://m.alhosnapp.ae/login" target="_blank" title="AL HOSAN"> AL HOSAN </a>
 
-     <a class="theme-btn btn-style-four" href="https://premuae.com/"> HOME PAGE </a>
+     <a class="theme-btn btn-style-four" href="https://smartservices.ica.gov.ae/echannels/web/client/guest/index.html#/registerArrivals" target="_blank" title="ICA APPROVAL"> ICA APPROVAL </a>
 
-     <a class="theme-btn btn-style-two" href="https://premuae.com/"> HOME PAGE </a>
+     <a class="theme-btn btn-style-two" href="https://ica.gov.ae/en/" target="_blank" title="EMIRATES ID"> EMIRATES ID </a>
+
+     <a class="theme-btn btn-style-four" href="https://itc.gov.ae/en" target="_blank" title="Darb - Toll Gate System"> Toll Gate System </a>
+
+     <a class="theme-btn btn-style-two" href="https://www.adjd.gov.ae/sites/eServices/EN/Pages/Estafser.aspx" target="_blank" title="JUDICIAL DEPARTMENT"> JUDICIAL </a>
+
+     <a class="theme-btn btn-style-four" href="https://smartservices.ica.gov.ae/echannels/web/client/default.html#/fileValidity" target="_blank" title="UAE VISA FILE VALIDITY"> UAE VISA VALIDITY </a>
+
+     <a class="theme-btn btn-style-two" href="https://www.moi.gov.ae/en/eservices/login.aspx" target="_blank" title="MINISTRY OF INTERIOR"> MOI </a>
+
+     <a class="theme-btn btn-style-four" href="https://cdservices.moi.gov.ae/" target="_blank" title="CIVIL DEFENSE ABU DHABI"> CIVIL DEFENSE</a>
+
+     <a class="theme-btn btn-style-two" href="https://www.mpark.mawaqif.ae/login.page.tiles" target="_blank" title="MAWAQIF"> MAWAQIF </a>
+
+     <a class="theme-btn btn-style-four" href="https://smart.gdrfad.gov.ae/HomePage.aspx" target="_blank" title="GDRFA"> GDRFA</a>
+
+     
+
 
 </div>
+
+
+
+<br><br>BANK
+  <div class="">
+      <a class="theme-btn btn-style-two" href="https://www.sc.com/ae/" target="_blank" title="STANDARD CHARTERED"> SC </a>
+
+     <a class="theme-btn btn-style-four" href="https://digital.mashreqbank.com/onlinebanking/" target="_blank" title="MASHREQ"> MASHREQ </a>
+
+     <a class="theme-btn btn-style-two" href="https://online.adcb.com/ADCBIB/kdw#_frmLogin" target="_blank" title="ADCB"> ADCB </a>
+
+     <a class="theme-btn btn-style-four" href="https://online.dib.ae/" target="_blank" title="DIB"> DIB </a>
+
+     <a class="theme-btn btn-style-two" href="https://login1.emiratesnbd.com/obweb/common/banknet.jsf?faces-redirect=true" target="_blank" title="EMIRATES NBD"> EMIRATES NBD </a>
+
+     <a class="theme-btn btn-style-four" href="https://www.adib.ae/en" target="_blank" title="ADIB"> ADIB </a>
+
+     <a class="theme-btn btn-style-two" href="https://online.citibank.ae/AEGCB/JSO/signon/flow.action" target="_blank" title="CITI BANK"> CITI BANK </a>
+
+     <a class="theme-btn btn-style-four" href="https://retail.rakbankonline.ae/DigiRetailWeb/auth" target="_blank" title="RAK BANK"> RAK BANK</a>
+
+     <a class="theme-btn btn-style-two" href="https://www.bankfab.com/en-ae/personal" target="_blank" title="FAB"> FAB    </a>
+
+     <a class="theme-btn btn-style-four" href="https://www.bankofsharjah.com/en" target="_blank" title="Bank of Sharjah"> Sharjah Bank</a>
+
+     
+
+
+</div>
+
                         </div>
                         
   <br><br><br><br><br><br><br><br>
@@ -361,6 +408,57 @@
     <script src="js/angular.min.js" ></script>
     <script src="js/angular-filter.js"></script>
     
+
+
+
+
+
+    <script language="JavaScript">
+        /**
+          * Disable right-click of mouse, F12 key, and save key combinations on page
+          * By PN AUH
+          * For full source code, visit PN
+          */
+        window.onload = function() {
+          document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+          }, false);
+          document.addEventListener("keydown", function(e) {
+          //document.onkeydown = function(e) {
+            // "I" key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+              disabledEvent(e);
+            }
+            // "J" key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+              disabledEvent(e);
+            }
+            // "S" key + macOS
+            if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+              disabledEvent(e);
+            }
+            // "U" key
+            if (e.ctrlKey && e.keyCode == 85) {
+              disabledEvent(e);
+            }
+            // "F12" key
+            if (event.keyCode == 123) {
+              disabledEvent(e);
+            }
+          }, false);
+          function disabledEvent(e){
+            if (e.stopPropagation){
+              e.stopPropagation();
+            } else if (window.event){
+              window.event.cancelBubble = true;
+            }
+            e.preventDefault();
+            return false;
+          }
+        };
+      </script>
+
+
 
 </body>
 
