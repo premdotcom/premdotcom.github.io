@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>𝗣𝗥𝗘𝗠 𝗡𝗔𝗜𝗥</title>
+ <link rel="icon" href="favicon.ico">
+ <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+   <script>
+    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+    if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+    function mischandler(){
+    return false;
+    }
+    function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    </script>
+</header>
+
+<h1>Useful links</h1>
+<p>This page contains links to the official portals</p>
+<div class="frame">
+  <a href="https://www.google.com/" target="_blank"><button class="custom-btn btn-1">Google</button></a>
+  <a href="https://outlook.live.com/" target="_blank"><button class="custom-btn btn-2">Outlook</button></a>
+  <a href="https://login.yahoo.com/?.src=ym&pspid=2023538075&activity=ybar-mail&.lang=en-GB&.intl=gb&.done=https%3A%2F%2Fmail.yahoo.com%2Fd%3Fpspid%3D2023538075%26activity%3Dybar-mail" target="_blank"><button class="custom-btn btn-3"><span>Yahoo</span></button></a>
+  <a href="https://retail.onlinesbi.sbi/retail/login.htm" target="_blank"><button class="custom-btn btn-4"><span>SBI</span></button></a>
+  <a href="https://www.fednetbank.com/" target="_blank"><button class="custom-btn btn-5"><span>Federal Bank</span></button></a>
+  <a href="https://netbanking.hdfcbank.com/netbanking/" target="_blank"><button class="custom-btn btn-6"><span>HDFC</span></button></a>
+  <a href="https://portal.pravasi.ksfe.com/" target="_blank"><button class="custom-btn btn-7"><span>KSFE</span></button></a>
+  <a href="https://wss.kseb.in/selfservices/" target="_blank"><button class="custom-btn btn-8"><span>KSEB</span></button></a>
+  <a href="https://eportal.incometax.gov.in/iec/foservices/#/login" target="_blank"><button class="custom-btn btn-9">Income Tax</button></a>
+  <a href="https://epay.kwa.kerala.gov.in/quickpay" target="_blank"><button class="custom-btn btn-10">KWA</button></a>
+  <a href="https://revenue.kerala.gov.in/" target="_blank"><button class="custom-btn btn-11">Village Tax<div class="dot"></div></button></a>
+  <a href="https://tax.lsgkerala.gov.in/epayment/" target="_blank"><button class="custom-btn btn-12"><span>Click!</span><span>Panchayat Tax</span></button></a>
+  <a href="https://www.amazon.in/" target="_blank"><button class="custom-btn btn-13">Amazon</button></a>
+  <a href="https://www.flipkart.com/" target="_blank"><button class="custom-btn btn-14">Flipkart</button></a>
+  <a href="https://web.whatsapp.com/" target="_blank"><button class="custom-btn btn-15">Whatsapp</button></a>
+  <a href="https://portal.bsnl.in/myportal/authorize.do" target="_blank"><button class="custom-btn btn-16">BSNL</button></a>
+  <p style="font-family: Andale Mono, monospace;">
+    Designed by Prem Nair</p>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
