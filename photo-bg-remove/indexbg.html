@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FREE PHOTO BACKGROUND REMOVER</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+      if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+      function mischandler(){
+      return false;
+      }
+      function mousehandler(e){
+      var myevent = (isNS) ? e : event;
+      var eventbutton = (isNS) ? myevent.which : myevent.button;
+      if((eventbutton==2)||(eventbutton==3)) return false;
+      }
+      document.oncontextmenu = mischandler;
+      document.onmousedown = mousehandler;
+      document.onmouseup = mousehandler;
+      </script>
+
+  </head>
+  <body>
+
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+   
+
+    <div class="container">
+      <h1>
+        Remove the background<span> from </span>  <span>your</span> <span>Images</span> For Free
+      </h1>
+      <!-- Add Card -->
+      <div class="card" id="addCard">
+        <button>
+          <input type="file" name="" id="fileInput" />
+          Upload Image
+        </button>
+        <p>Choose an image to remove background</p>
+      </div>
+      <!-- Display Card -->
+      <div class="card" id="displayCard">
+        <div class="image-cont">
+          <img
+            id="display-img"
+            src=""
+            alt=""
+          />
+        </div>
+        <button id="startBtn">Start</button>
+      </div>
+      <!-- Loading Card -->
+      <div class="card" id="loadingCard">
+        <div class="loader"></div>
+      </div>
+      <!-- Download Card -->
+      <div class="card" id="downloadCard">
+        <div class="image-cont">
+          <img
+            class="image-before"
+            src=""
+            alt=""
+          />
+          <img
+            class="image-after"
+            src=""
+            alt=""
+          />
+        </div>
+        <div style="display: flex; gap: 10px">
+          <button id="uploadAnother">Upload Another</button>
+          <button style="padding: 10px 40px">
+            <a id="downloadHref" download="transparentImage"> Download </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
