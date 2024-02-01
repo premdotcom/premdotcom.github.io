@@ -31,21 +31,21 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <script>
-    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
-    if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
-    function mischandler(){
-    return false;
-    }
-    function mousehandler(e){
-    var myevent = (isNS) ? e : event;
-    var eventbutton = (isNS) ? myevent.which : myevent.button;
-    if((eventbutton==2)||(eventbutton==3)) return false;
-    }
-    document.oncontextmenu = mischandler;
-    document.onmousedown = mousehandler;
-    document.onmouseup = mousehandler;
-    </script>
+    <script>
+      var isNS = (navigator.appName == "PN") ? 1 : 0;
+      if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+      function mischandler(){
+      return false;
+      }
+      function mousehandler(e){
+      var myevent = (isNS) ? e : event;
+      var eventbutton = (isNS) ? myevent.which : myevent.button;
+      if((eventbutton==2)||(eventbutton==3)) return false;
+      }
+      document.oncontextmenu = mischandler;
+      document.onmousedown = mousehandler;
+      document.onmouseup = mousehandler;
+      </script>
 
   
 </head>
@@ -762,20 +762,16 @@
         <div class="form-group mt-3">
           <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
         </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
+       
         <div class="text-center"><button type="submit">Send Message</button></div>
       </form>
 
-      
+     
       <script>
         $("#submit-form").submit((e)=>{
         e.preventDefault()
         $.ajax({
-        url:"https://script.google.com/macros/s/AKfycbwE41D00_MQX0bpcvPTy2WLeMWz32asEfM7vLzuDZpMcEDqRkBVT8Mtow/exec",
+        url:"https://script.google.com/macros/s/AKfycbwsU5jJnGutOx4dgeWlnwixDhP-O6WfdES-oaEBwJy8EAiH6djoJt_6tQumjly0B44RYg/exec",
         data:$("#submit-form").serialize(),
         method:"post",
         success:function (response){
@@ -790,7 +786,6 @@
         })
         })
         </script>
-
     </div>
   </section><!-- End Contact Section -->
 
